@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap');
+
+#greet-txt {
+    color: aliceblue;
+}
+
+.box-form {
+    /* border: 1px solid black; */
+    /* min-height: 8rem; */
+    min-width: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.box-input {
+    /* border: 1px solid blue; */
+    display: flex;
+    gap: .8rem;
+}
+
+.box-input>i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: 1px solid white;
+    box-shadow: .5rem .5rem .8rem .1rem rgba(0, 0, 0, .2);
+}
+
+.box-input>input {
+    cursor: text;
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    padding: 0 .7rem;
+    box-shadow: .5rem .5rem .8rem .1rem rgba(0, 0, 0, .2);
+    transition: all .2s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+/* .box-input>input:hover {
+    box-shadow: .2rem -.2rem .9rem .1rem rgba(0, 0, 0, .5);
+    transform: translateY(2px);
+} */
+
+.box-input>input:focus {
+    box-shadow: .2rem -.2rem .9rem .1rem rgba(0, 0, 0, .5);
+    transform: translateY(4px);
+}
+
+.btn {
+    cursor: pointer;
+    border: none;
+    width: 50%;
+    padding: .5rem .4rem;
+    border-radius: 1rem;
+    box-shadow: .2rem .2rem .8rem .1rem rgba(0, 0, 0, .2);
+    transition: all .2s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
+
+.btn:hover {
+    box-shadow: .2rem -.2rem .9rem .1rem rgba(0, 0, 0, .5);
+    transform: translateY(5px);
+}
+
+
+/* styling main */
+.main-box {
+    /* height: 15rem; */
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: .4rem;
+}
+
+/* styling main */
+#error {
+    color: aliceblue;
+}

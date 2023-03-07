@@ -1,0 +1,17 @@
+{
+  "name": "weather_app",
+  "version": "1.0.0",
+  "description": "This is a dynamic weather app using NodeJS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AVHI",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "requests": "^0.3.0"
+  }
+}
