@@ -2,6 +2,8 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const https = require("https");
+const dotenv = require("dotenv");
+dotenv.config();
 
 const path = require("path");
 
@@ -35,7 +37,7 @@ app.get('/', (req, res) => {
 
 app.post('/', (req, res) => {
     const cityName = req.body.location;
-    const apiKey = "8f7a8a904243c4467a750bc16cdfb594";
+    const apiKey = process.env.API_KEY;
     const unit = "metric";
 
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=${unit}`;
